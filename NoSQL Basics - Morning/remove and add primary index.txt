@@ -1,0 +1,28 @@
+/*creating primary index in movie*/
+
+create primary index on movie;
+
+
+/*creating primary index on football*/
+
+create primary index on football;
+
+
+/* removing primaryindex on movie*/
+
+drop primary index on movie;
+
+
+/* removing primaryindex on football*/
+
+drop primary index on football;
+
+
+/*adding appropriate primary index on movie - id field will be appropriatefor creating index */
+
+create index movie_id on movie(id);
+
+
+/*adding appropriate primary index on football - id field will be appropriatefor creating index */
+
+create index player_id on football(id);
