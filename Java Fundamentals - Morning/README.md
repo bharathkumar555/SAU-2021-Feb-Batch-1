@@ -27,7 +27,7 @@ Expected Output :
 
 19 13  
 
-## eXERCISE 2  
+## Exercise 2  
 
 2. Write a Java program to print an American flag on the screen.  
 
