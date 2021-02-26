@@ -9,4 +9,8 @@ Build a simple note taking app with following set of features
 
 # Submission
 
+## User login page
+
 ![alt text](https://github.com/bharathkumar555/SAU-2021-Feb-Batch-1/blob/main/React%20Native%20Session%201%20and%202%20-%20Morning%20-%20Afternoon/Screenshots/Screenshot_2021-02-27-02-05-00-460_host.exp.exponent.jpg)
+
+## Working flow video of the project is added in this foder
