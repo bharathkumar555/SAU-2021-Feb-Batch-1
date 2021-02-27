@@ -7,9 +7,6 @@ import Note from "./Note";
 const Allnotes = ({ navigation }) => {
 
     const update = async (id, title, desc) => {
-        // console.log(id);
-        // console.log(title);
-
         let change = data;
         console.log(change, "ds");
         if (change.length <= id) {
@@ -24,7 +21,6 @@ const Allnotes = ({ navigation }) => {
 
         setData(change);
         setNote();
-        // console.log(change);
 
     }
 
@@ -45,7 +41,6 @@ const Allnotes = ({ navigation }) => {
     }, [])
 
     useEffect(() => {
-        // console.log(data, "usef"); 
         setNote()
     },[data])
 
@@ -62,9 +57,6 @@ const Allnotes = ({ navigation }) => {
     const insert = (title, desc) => {
         navigation.navigate("Note Details", { data: {title: "", desc: "" }, update: update,id:data.length })
     }
-
-
-
 
     const setNote = async () => {
         await AsyncStorage.setItem("notes", JSON.stringify(data));
