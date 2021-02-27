@@ -8,10 +8,7 @@ const image2  = {uri: "https://previews.123rf.com/images/scenery1/scenery11804/s
 
 const userLogin = ({navigation}) => {
     const [userName,setUserName] = useState("");
-    const [password,setPassword] = useState("");
-   
-
-    
+    const [password,setPassword] = useState(""); 
 
     const saveData = async () => {
         try {
