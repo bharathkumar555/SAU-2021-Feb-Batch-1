@@ -17,8 +17,6 @@ const Allnotes = ({ navigation }) => {
         }
         console.log(change.length, "dnes");
         console.log(change, "dswewe");
-
-
         setData(change);
         setNote();
 
