@@ -9,7 +9,7 @@ const image2  = {uri: "https://previews.123rf.com/images/scenery1/scenery11804/s
 const userLogin = ({navigation}) => {
     const [userName,setUserName] = useState("");
     const [password,setPassword] = useState("");
-    const [error,setError] = useState("");
+   
 
     
 
@@ -45,7 +45,6 @@ const userLogin = ({navigation}) => {
             <TextInput placeholder="Enter Username" onChangeText={ (text) => setUserName(text)} style={styles.textInputStyle} />
             <Text></Text>
             <TextInput placeholder="Enter Password" onChangeText={ (text) => setPassword(text)} style={styles.textInputStyle} />
-            <Text style={styles.error}>{error}</Text>
             <Button title="Login" color="blue"  onPress={logged} />
             </ImageBackground>
         </View>  
