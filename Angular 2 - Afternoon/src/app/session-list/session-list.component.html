@@ -1,0 +1,45 @@
+<h3></h3>
+
+<div
+  style="
+    margin-left: 275px;
+    margin-right: 160px;
+  "
+>
+  <mat-card
+    style="
+      margin: 30px;
+      width: 400px;
+      height: 200px;
+      background-color: rgb(61, 204, 230);
+      display: inline-flex;
+
+      color : white;
+    "
+    *ngFor="let session of sessions"
+  >
+    <mat-card style="border: 5px solid rgb(253, 252, 252); width: 390px;">
+      <mat-card-header
+        ><mat-card-title
+          ><b>{{ session.name }}</b></mat-card-title
+        ></mat-card-header
+      >
+      <mat-card-content style="display: block; padding-left: 35px; font-family: sans-serif;">{{
+        session.instructor
+      }}</mat-card-content>
+      <mat-card-content style="display: block; padding-left: 35px">{{
+        session.description
+      }}</mat-card-content>
+      <button class="editButton" (click)="editSession(session)">
+        Edit
+      </button>
+      <button class="removeButton" (click)="deleteSession(session)">
+        Remove
+      </button>
+    </mat-card>
+  </mat-card>
+</div>
+<br />
+<button class="addButton" (click)="addSession()">Add Session</button>
+
+

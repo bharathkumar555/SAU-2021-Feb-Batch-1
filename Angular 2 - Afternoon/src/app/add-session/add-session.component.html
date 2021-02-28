@@ -1,0 +1,35 @@
+<div style="
+margin-left: 275px;
+margin-right: 160px;
+">
+  <form [formGroup]="sessionForm">
+    <mat-card style="
+    margin: 30px;
+    width: 400px;
+    height: 250px;
+    background-color: rgb(61, 204, 230);
+    border: 5px solid black;
+    color : white;
+  ">
+      <mat-form-field style="width: 100%;" appearance="fill">
+          <mat-card-content >Name</mat-card-content>
+          <input matInput formControlName="name">
+      </mat-form-field>
+
+      <mat-form-field style="width: 100%;" appearance="fill">
+        <mat-card-content >Instructor</mat-card-content>
+          <input matInput formControlName="instructor">
+      </mat-form-field>
+
+      <mat-form-field style="width: 100%;" appearance="fill">
+        <mat-card-content >Description</mat-card-content>
+          <input matInput formControlName="description">
+      </mat-form-field>
+
+      <button class="editButton" style="margin-top: 50px;" mat-raised-button color="primary" (click)="addToList()">Save</button>
+    </mat-card>
+    </form>
+  <div>
+      
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<h3> Fill the below table to update  session : </h3>
+<button class = "addButton" (click)="editSession()">Update changes</button>
+    
+<div style="text-align: center;">
+    <form [formGroup]="sessionForm">
+    <table class="styled-table">
+        <thead style>
+            <tr>
+                <th>Feilds to be updated </th>
+                <th>Values </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="active-row" *ngFor="let feild of update_feilds">
+                <td>{{feild}}</td>
+                <td><input matInput formControlName="{{feild}}"></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+</div>
