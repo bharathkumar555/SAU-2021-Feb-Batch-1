@@ -1,6 +1,6 @@
 # Assignment
   
-1.Ecommerece  
+1. Ecommerece  
 -----------  
 Product (product to categories is one-to-many)  
 Categories ()  
